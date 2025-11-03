@@ -92,6 +92,7 @@ nav a.active {
     font-weight: 600;
 }
 
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -810,10 +811,12 @@ h2::after {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-bottom: 3rem;
+    word-break: break-word;   /* prevents text from overflowing */
 }
+
 
 .contact-item {
     background: rgba(255, 255, 255, 0.03);
@@ -841,6 +844,9 @@ h2::after {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 .contact-item:hover a {
@@ -1001,29 +1007,4 @@ footer p {
         width: 180px;
         height: 180px;
     }
-}
-
-/* ---------- Mobile Responsive ---------- */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact-info {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .project-container {
-    flex-direction: column;
-    align-items: center;
-  }
 }
