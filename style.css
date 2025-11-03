@@ -146,12 +146,13 @@ nav a.active {
     margin: 0 auto 2rem;
     position: relative;
     animation: float 3s ease-in-out infinite;
+    padding: 5px;
 }
 
 .profile-img-wrapper::before {
     content: '';
     position: absolute;
-    inset: -5px;
+    inset: 0;
     background: linear-gradient(45deg, var(--netflix-red), var(--accent-purple), var(--accent-blue), var(--netflix-red));
     border-radius: 12px;
     animation: rotate 3s linear infinite;
