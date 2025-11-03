@@ -144,3 +144,7 @@ const lazyLoadImages = () => {
 document.addEventListener('DOMContentLoaded', () => {
     lazyLoadImages();
 });
+
+document.querySelector('.menu-icon').onclick = function() {
+  document.querySelector('nav ul').classList.toggle('active');
+}
